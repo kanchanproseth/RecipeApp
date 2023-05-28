@@ -39,6 +39,12 @@ The application using SwiftUI with MVVM.
     -> ViewModelTests
  ```
  
+ ![alt text](https://github.com/kanchanproseth/RecipeApp/blob/main/screenshots/1.png)
+ 
+ 
+ ![alt text](https://github.com/kanchanproseth/RecipeApp/blob/main/screenshots/2.png)
+ 
+ 
  ## Network Layer
  
 In this application, I separate network layer. Network Target improve the network layer easier to test and clean. it's a place we manage our routes url, path, query param, httpMethod... and more. 
