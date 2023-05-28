@@ -5,7 +5,8 @@ RecipeApp is just an assignment application.
 
 ## Application structure
 
-The application using SwiftUI with MVVM.
+The application uses SwiftUI with MVVM.
+
 ```
 -> RecipeApp
 
@@ -260,10 +261,11 @@ struct MealDetails {
 
 ## What could have done if I work on a real project?
 
-- I would consider Dependency Injection SwiftUI. what I'd ever used before with UIkit is Coordinator Pattern or VIPER. It helps to manage to coordinate route view and inject.
+- Dependency Injection SwiftUI, what I'd ever used before with UIkit is Coordinator Pattern or VIPER. It helps to manage to coordinate route view and inject.
 - Application setup should have a flavour to manage separate environments and target SIT, UAT, and PROD.
 - Reachability (Internet network check).
 - The list should have pull refresh, and infinite scroll if the API implements pagination.
+- CI/CD, set up Fastlane and automate the build and push to Firebase app distribution for the tester to be able to download test application from there and also achieve and push a build to Apple connect when we merge code to the Main branch.RecipeApp is just an assignment application.
 
 
 #### Once again please share with me what you think and feed me because I really need that for the improvement and development of my skills as well as my career.
