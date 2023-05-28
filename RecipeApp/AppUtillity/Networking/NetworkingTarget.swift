@@ -5,7 +5,7 @@
 //  Created by Kan Chanproseth on 24/05/2023.
 //
 
-import UIKit
+import Foundation
 
 public enum NetworkType: String, CaseIterable {
     case http, https

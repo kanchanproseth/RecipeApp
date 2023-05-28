@@ -181,19 +181,19 @@
 			isa = PBXGroup;
 			children = (
 				D15010B32A1F0B7D00BDAC5C /* DetailsScene */,
-				D15010962A1F044D00BDAC5C /* MealListViewScene */,
+				D15010962A1F044D00BDAC5C /* RecipeListViewScene */,
 			);
 			path = Scenes;
 			sourceTree = "<group>";
 		};
-		D15010962A1F044D00BDAC5C /* MealListViewScene */ = {
+		D15010962A1F044D00BDAC5C /* RecipeListViewScene */ = {
 			isa = PBXGroup;
 			children = (
 				D15010B12A1F0B6800BDAC5C /* Model */,
 				D15010B02A1F0B6300BDAC5C /* ViewModel */,
 				D15010992A1F046D00BDAC5C /* View */,
 			);
-			path = MealListViewScene;
+			path = RecipeListViewScene;
 			sourceTree = "<group>";
 		};
 		D15010992A1F046D00BDAC5C /* View */ = {
