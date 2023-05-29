@@ -267,7 +267,7 @@ struct MealDetails {
 - Dependency Injection SwiftUI, what I'd ever used before with UIkit is Coordinator Pattern or VIPER. It helps to manage to coordinate route view and inject.
 - Application setup should have a flavour to manage separate environments and target SIT, UAT, and PROD.
 - Reachability (Internet network check).
-- The list should have pull refresh, and infinite scroll if the API implements pagination.
+- The list should have pull refresh custom animation, and infinite scroll if the API implements pagination.
 - CI/CD, set up Fastlane and automate the build and push to Firebase app distribution for the tester to be able to download test application from there and also achieve and push a build to Apple connect when we merge code to the Main branch.RecipeApp is just an assignment application.
 
 
