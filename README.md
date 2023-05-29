@@ -51,7 +51,7 @@ The application uses SwiftUI with MVVM.
  
  ## Network Layer
  
-In this application, I separate the network layer. Network Target improve the network layer easier to test and clean. it's a place we manage our routes URL, path, query param, httpMethod... and more. 
+In this application, I separate the network layer. Network Target improve the network layer easier to test and clean. it's a place we manage our routes URL, path, query param, httpMethod... and more. (Concept from Moya: https://github.com/Moya/Moya) 
 
 #### Base Network Target: configure base url, httpMethod, type ...
 ```swift
@@ -183,6 +183,7 @@ public struct MealEntity: Codable {
 ```
 
 #### Once I got the meals array of the dictionary, I pass it to map in the separate model for MealData and MealDetails with custom key mapping dictionary
+
 ```swift
 // MARK: MealData
 struct MealData: Identifiable, Hashable {
@@ -271,6 +272,6 @@ struct MealDetails {
 - CI/CD, set up Fastlane and automate the build and push to Firebase app distribution for the tester to be able to download test application from there and also achieve and push a build to Apple connect when we merge code to the Main branch.RecipeApp is just an assignment application.
 
 
-#### Once again please share with me what you think and feed me because I really need that for the improvement and development of my skills as well as my career.
+#### Once again please share with me what you think and feed back to me because I really need that for the improvement and development of my skills as well as my career.
 
 #### Thank you so much for spending your valuable time reading and review this.
