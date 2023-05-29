@@ -28,4 +28,9 @@ extension Text {
     func americanTypewriterTitleTextStyle2() -> Text {
         self.font(.custom("AmericanTypewriter",fixedSize: 14).weight(.semibold))
     }
+    
+    
+    func americanTypewriterTitleTextStyle3() -> Text {
+        self.font(.custom("AmericanTypewriter",fixedSize: 36).weight(.bold))
+    }
 }
