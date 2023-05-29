@@ -27,11 +27,5 @@ actor ImageViewerManager {
         let (data, _) = try await URLSession.shared.data(for: urlRequest)
         return UIImage(data: data)
     }
-    
-    private enum LoaderStatus {
-        case loading(Task<UIImage, Error>)
-        case complete(UIImage)
-    }
-    
 }
 

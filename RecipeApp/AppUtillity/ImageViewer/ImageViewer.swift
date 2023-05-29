@@ -20,7 +20,6 @@ struct ImageViewer: View {
     var body: some View {
         Group {
             if let image = image {
-                
                 Image(uiImage: image)
                     .resizable()
                     .scaledToFill()
