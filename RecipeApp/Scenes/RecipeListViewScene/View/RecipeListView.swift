@@ -51,6 +51,12 @@ struct RecipeListView: View {
                             await viewModel.loadSuggestion()
                             await viewModel.loadMeal()
                         }
+                        .refreshable {
+                            Task {
+                                await viewModel.loadSuggestion()
+                                await viewModel.loadMeal(by: viewModel.searchText)
+                            }
+                        }
                         .searchable(text: $viewModel.searchText,
                                     placement: .navigationBarDrawer(displayMode: .always),
                                     prompt: "Search by category",
