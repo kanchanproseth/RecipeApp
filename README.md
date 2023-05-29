@@ -2,6 +2,9 @@
  
 RecipeApp is just an assignment application.
 
+![Alt Text](https://github.com/kanchanproseth/RecipeApp/blob/main/screenshots/rec.gif)
+
+
 
 ## Application structure
 
