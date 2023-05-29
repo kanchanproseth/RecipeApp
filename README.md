@@ -1,11 +1,12 @@
 # RecipeApp
  
-RecipeApp is just an assignment application of the company I really want to join. Hopefully I have a chance to join their team.
+RecipeApp is just an assignment application.
 
 
 ## Application structure
 
-The application using SwiftUI with MVVM.
+The application uses SwiftUI with MVVM.
+
 ```
 -> RecipeApp
 
@@ -39,9 +40,15 @@ The application using SwiftUI with MVVM.
     -> ViewModelTests
  ```
  
+ ![alt text](https://github.com/kanchanproseth/RecipeApp/blob/main/screenshots/1.png)
+ 
+ 
+ ![alt text](https://github.com/kanchanproseth/RecipeApp/blob/main/screenshots/2.png)
+ 
+ 
  ## Network Layer
  
-In this application, I separate network layer. Network Target improve the network layer easier to test and clean. it's a place we manage our routes url, path, query param, httpMethod... and more. 
+In this application, I separate the network layer. Network Target improve the network layer easier to test and clean. it's a place we manage our routes URL, path, query param, httpMethod... and more. 
 
 #### Base Network Target: configure base url, httpMethod, type ...
 ```swift
@@ -133,10 +140,9 @@ extension MealTarget: NetworkTarget {
 
 ## Model and Data Mapping
 
-It's really interesting that api response is not follow by standard RestApi Reponse but it's good know how to deal with this problems because I used to face some Api much worst than this. It's not the best solution so if you have any feed back, please share it to me. I am happy to learn from other people perspective.
+It's really interesting that API response is not followed by standard RestApi responses but it's good to know how to deal with this problem because I used to face some Api much worst than this. It's not the best solution so if you have any feedback, please share it with me. I am happy to learn from other people's perspectives.
 
-#### This is normal mapping using codable. The more standard of restApi response, the less work we have to deal with model mapping.
-
+#### This is a normal mapping using codable. The more standard of restApi response, the less work we have to deal with model mapping.
 ```swift
 import Foundation
 
@@ -173,7 +179,7 @@ public struct MealEntity: Codable {
 }
 ```
 
-#### Once I got the meals array of dictionary, I pass it to map in separate model for MealData and MealDetails with custom key mapping dictionary
+#### Once I got the meals array of the dictionary, I pass it to map in the separate model for MealData and MealDetails with custom key mapping dictionary
 ```swift
 // MARK: MealData
 struct MealData: Identifiable, Hashable {
@@ -253,14 +259,15 @@ struct MealDetails {
 }
 ```
 
-## What could have done if I work on real project?
+## What could have done if I work on a real project?
 
-- I would consider Dependency Injection SwiftUI. what I'd ever use before with UIkit is Coordinator Pattern or VIPER. It help managing coordinate route view and inject.
-- Application setup should have flavour to manage separate environment and target for SIT, UAT, PROD.
-- Reachabillity (Internet network check).
-- List should have pull refresh, infinite scroll if api implement pagination.
+- Dependency Injection SwiftUI, what I'd ever used before with UIkit is Coordinator Pattern or VIPER. It helps to manage to coordinate route view and inject.
+- Application setup should have a flavour to manage separate environments and target SIT, UAT, and PROD.
+- Reachability (Internet network check).
+- The list should have pull refresh, and infinite scroll if the API implements pagination.
+- CI/CD, set up Fastlane and automate the build and push to Firebase app distribution for the tester to be able to download test application from there and also achieve and push a build to Apple connect when we merge code to the Main branch.RecipeApp is just an assignment application.
 
 
-#### Once again please share me what you think and feed because I really need that for my improvement and development of my skills as well as my career.
+#### Once again please share with me what you think and feed me because I really need that for the improvement and development of my skills as well as my career.
 
-#### Thank you so much for spending your valuable time to read and review this.
+#### Thank you so much for spending your valuable time reading and review this.
